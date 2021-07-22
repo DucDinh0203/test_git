@@ -1,8 +1,6 @@
 def swap(lst, a, b):
     lst[a], lst[b] = lst[b], lst[a]
     return None
-    pass
-
 
 def find_min(lst, index):
     min_number = lst[index]
@@ -12,7 +10,6 @@ def find_min(lst, index):
             min_number = lst[i]
             start = i
     return start
-    pass
 
 
 # selection sort
@@ -24,15 +21,12 @@ def selection_sort(lst):
                 min_index = j
         lst[i], lst[min_index] = lst[min_index], lst[i]
     return None
-    pass
-
 
 # Task 2
 def swap_down(lst, j):
     if lst[j] < lst[j - 1] and j > 0:
         lst[j], lst[j - 1] = lst[j - 1], lst[j]
     return None
-    pass
 
 
 def shuffle_down(lst, k):
@@ -42,7 +36,6 @@ def shuffle_down(lst, k):
         lst[j - 1], lst[j] = lst[j], lst[j - 1]
         j -= 1
     return None
-    pass
 
 
 def insertion_sort(lst):
@@ -55,8 +48,6 @@ def insertion_sort(lst):
         lst[j] = marker
     return None
 
-    pass
-
 
 # Task 3
 def degree(graph, v):
@@ -65,7 +56,6 @@ def degree(graph, v):
         if graph[v][i] == 1:
             count += 1
     return count
-    pass
 
 
 def shared_friends(graph, u, v):
@@ -74,12 +64,10 @@ def shared_friends(graph, u, v):
         if graph[u][i] == graph[v][i] == 1:
             friend_list.append(i)
     return friend_list
-    pass
 
 
 def are_friends(graph, u, v):
     return graph[u][v] == 1
-    pass
 
 
 def clique(graph, vertices):
