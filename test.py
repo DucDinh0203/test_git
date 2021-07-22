@@ -117,17 +117,6 @@ def enumerate(mylist, start=0):
     return new_list
 
 
-def filter(function, mylist):
-    new_list = []
-    for i in mylist:
-        if isinstance(function(i), int):
-            if function(i):
-                new_list.append(i)
-        elif isinstance(i[0], char) and function(i[0]) == True:
-            new_list.append(i)
-    return new_list
-
-
 def map(function, mylist):
     new_list = []
     for i in mylist:
